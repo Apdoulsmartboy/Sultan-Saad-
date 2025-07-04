@@ -36,7 +36,7 @@
 </div>
 
 <script>
-  emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+  emailjs.init("nHxWfQ72EC1nHMEWk"); // Replace with your EmailJS public key
 
   let generatedOTP = "";
   let otpTime = 0;
@@ -53,7 +53,7 @@
       otp: generatedOTP
     };
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID_OTP", params)
+    emailjs.send("service_l1hztmk", "213zLcSharmCdaM27ZGyK", params)
       .then(() => {
         alert("OTP sent to your email");
         document.getElementById("step1").style.display = "none";
@@ -85,7 +85,7 @@
       info: document.getElementById("info").value
     };
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID_FORM", params)
+    emailjs.send("service_l1hztmk", "213zLcSharmCdaM27ZGyK", params)
       .then(() => {
         document.getElementById("submitStatus").innerText = "Form submitted! Wait for admin approval.";
       })
